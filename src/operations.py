@@ -1,3 +1,4 @@
+from factorial import factorial
 class Operations:
     def __init__(self):
         self.a = 5
@@ -12,8 +13,12 @@ class Operations:
     def subtract(self):
         return self.a - self.b
 
+    def factorial(self):
+        return factorial(self.a)
+
 op = Operations()
 op.display()
 print(f"Addition: {op.add()}")
 print(f"Subtraction: {op.subtract()}")  
+print(f"Factorial of {op.a}: {op.factorial()}")
 
